@@ -163,6 +163,30 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .top-\[127px\] {
+    top: 127px;
+  }
+  .top-\[151px\] {
+    top: 151px;
+  }
+  .left-\[1px\] {
+    left: 1px;
+  }
+  .left-\[127\] {
+    left: 127;
+  }
+  .left-\[127px\] {
+    left: 127px;
+  }
+  .left-\[151px\] {
+    left: 151px;
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -181,6 +205,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
@@ -198,6 +225,12 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-auto {
+    cursor: auto;
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .resize {
     resize: both;
@@ -314,6 +347,20 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .group-hover\:block {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        display: block;
+      }
+    }
+  }
+  .hover\:text-\[\#00FFF8\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #00FFF8;
+      }
+    }
   }
 }
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");

@@ -9,9 +9,19 @@
   <body>
     <main class="bg-[#0D192C] flex items-center justify-center h-screen">
       <div
-        class="bg-[#15263F] p-6 flex flex-col rounded-[15px] w-[350px] h-[596px]"
+        class="bg-[#15263F] p-6 flex flex-col rounded-[15px] w-[350px] h-[596px] relative group cursor-pointer"
       >
         <img src="./Rectangle Copy (5).png" alt="" />
+        <img
+          class="hidden absolute group-hover:block"
+          src="./Rectangle Copy 2.png"
+          alt=""
+        />
+        <img
+          class="hidden absolute top-[151px] left-[151px] group-hover:block"
+          src="./Eye.png"
+          alt=""
+        />
         <div>
           <h2 class="text-[#FFFFFF] text-[22px] font-semibold mt-6 mb-[16px]">
             Equilibrium #3429
@@ -69,7 +79,9 @@
           <div class="flex items-center gap-4 pt-4">
             <img src="./Oval (1).png" alt="" />
             <p class="text-[#8BACD9]">
-              Creation of<span class="text-[#FFFFFF]"> Jules Wyvern</span>
+              Creation of<span class="text-[#FFFFFF] hover:text-[#00FFF8]">
+                Jules Wyvern</span
+              >
             </p>
           </div>
         </div>
